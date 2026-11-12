@@ -1,0 +1,869 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "user": "u0",
+      "item": "i0",
+      "time": 0,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0000"
+    },
+    {
+      "user": "u0",
+      "item": "i1",
+      "time": 1,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0001"
+    },
+    {
+      "user": "u0",
+      "item": "i2",
+      "time": 2,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0002"
+    },
+    {
+      "user": "u0",
+      "item": "i3",
+      "time": 0,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0003"
+    },
+    {
+      "user": "u0",
+      "item": "i4",
+      "time": 1,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0004"
+    },
+    {
+      "user": "u0",
+      "item": "i5",
+      "time": 2,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0005"
+    },
+    {
+      "user": "u0",
+      "item": "i6",
+      "time": 0,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0006"
+    },
+    {
+      "user": "u0",
+      "item": "i7",
+      "time": 1,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0007"
+    },
+    {
+      "user": "u1",
+      "item": "i0",
+      "time": 5,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0008"
+    },
+    {
+      "user": "u1",
+      "item": "i1",
+      "time": 3,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0009"
+    },
+    {
+      "user": "u1",
+      "item": "i2",
+      "time": 4,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0010"
+    },
+    {
+      "user": "u1",
+      "item": "i3",
+      "time": 5,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0011"
+    },
+    {
+      "user": "u1",
+      "item": "i4",
+      "time": 3,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0012"
+    },
+    {
+      "user": "u1",
+      "item": "i5",
+      "time": 4,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0013"
+    },
+    {
+      "user": "u1",
+      "item": "i6",
+      "time": 5,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0014"
+    },
+    {
+      "user": "u1",
+      "item": "i7",
+      "time": 3,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0015"
+    },
+    {
+      "user": "u2",
+      "item": "i0",
+      "time": 7,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0016"
+    },
+    {
+      "user": "u2",
+      "item": "i1",
+      "time": 8,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0017"
+    },
+    {
+      "user": "u2",
+      "item": "i2",
+      "time": 6,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0018"
+    },
+    {
+      "user": "u2",
+      "item": "i3",
+      "time": 7,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0019"
+    },
+    {
+      "user": "u2",
+      "item": "i4",
+      "time": 8,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0020"
+    },
+    {
+      "user": "u2",
+      "item": "i5",
+      "time": 6,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0021"
+    },
+    {
+      "user": "u2",
+      "item": "i6",
+      "time": 7,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0022"
+    },
+    {
+      "user": "u2",
+      "item": "i7",
+      "time": 8,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0023"
+    },
+    {
+      "user": "u3",
+      "item": "i0",
+      "time": 9,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0024"
+    },
+    {
+      "user": "u3",
+      "item": "i1",
+      "time": 10,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0025"
+    },
+    {
+      "user": "u3",
+      "item": "i2",
+      "time": 11,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0026"
+    },
+    {
+      "user": "u3",
+      "item": "i3",
+      "time": 9,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0027"
+    },
+    {
+      "user": "u3",
+      "item": "i4",
+      "time": 10,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0028"
+    },
+    {
+      "user": "u3",
+      "item": "i5",
+      "time": 11,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0029"
+    },
+    {
+      "user": "u3",
+      "item": "i6",
+      "time": 9,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0030"
+    },
+    {
+      "user": "u3",
+      "item": "i7",
+      "time": 10,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0031"
+    },
+    {
+      "user": "u4",
+      "item": "i0",
+      "time": 14,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0032"
+    },
+    {
+      "user": "u4",
+      "item": "i1",
+      "time": 12,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0033"
+    },
+    {
+      "user": "u4",
+      "item": "i2",
+      "time": 13,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0034"
+    },
+    {
+      "user": "u4",
+      "item": "i3",
+      "time": 14,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0035"
+    },
+    {
+      "user": "u4",
+      "item": "i4",
+      "time": 12,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0036"
+    },
+    {
+      "user": "u4",
+      "item": "i5",
+      "time": 13,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0037"
+    },
+    {
+      "user": "u4",
+      "item": "i6",
+      "time": 14,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0038"
+    },
+    {
+      "user": "u4",
+      "item": "i7",
+      "time": 12,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0039"
+    },
+    {
+      "user": "u5",
+      "item": "i0",
+      "time": 16,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0040"
+    },
+    {
+      "user": "u5",
+      "item": "i1",
+      "time": 17,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0041"
+    },
+    {
+      "user": "u5",
+      "item": "i2",
+      "time": 15,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0042"
+    },
+    {
+      "user": "u5",
+      "item": "i3",
+      "time": 16,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0043"
+    },
+    {
+      "user": "u5",
+      "item": "i4",
+      "time": 17,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0044"
+    },
+    {
+      "user": "u5",
+      "item": "i5",
+      "time": 15,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0045"
+    },
+    {
+      "user": "u5",
+      "item": "i6",
+      "time": 16,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0046"
+    },
+    {
+      "user": "u5",
+      "item": "i7",
+      "time": 17,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0047"
+    },
+    {
+      "user": "u6",
+      "item": "i0",
+      "time": 18,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0048"
+    },
+    {
+      "user": "u6",
+      "item": "i1",
+      "time": 19,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0049"
+    },
+    {
+      "user": "u6",
+      "item": "i2",
+      "time": 20,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0050"
+    },
+    {
+      "user": "u6",
+      "item": "i3",
+      "time": 18,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0051"
+    },
+    {
+      "user": "u6",
+      "item": "i4",
+      "time": 19,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0052"
+    },
+    {
+      "user": "u6",
+      "item": "i5",
+      "time": 20,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0053"
+    },
+    {
+      "user": "u6",
+      "item": "i6",
+      "time": 18,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0054"
+    },
+    {
+      "user": "u6",
+      "item": "i7",
+      "time": 19,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0055"
+    },
+    {
+      "user": "u7",
+      "item": "i0",
+      "time": 23,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0056"
+    },
+    {
+      "user": "u7",
+      "item": "i1",
+      "time": 21,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0057"
+    },
+    {
+      "user": "u7",
+      "item": "i2",
+      "time": 22,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0058"
+    },
+    {
+      "user": "u7",
+      "item": "i3",
+      "time": 23,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0059"
+    },
+    {
+      "user": "u7",
+      "item": "i4",
+      "time": 21,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0060"
+    },
+    {
+      "user": "u7",
+      "item": "i5",
+      "time": 22,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0061"
+    },
+    {
+      "user": "u7",
+      "item": "i6",
+      "time": 23,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0062"
+    },
+    {
+      "user": "u7",
+      "item": "i7",
+      "time": 21,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0063"
+    },
+    {
+      "user": "u8",
+      "item": "i0",
+      "time": 25,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0064"
+    },
+    {
+      "user": "u8",
+      "item": "i1",
+      "time": 26,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0065"
+    },
+    {
+      "user": "u8",
+      "item": "i2",
+      "time": 24,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0066"
+    },
+    {
+      "user": "u8",
+      "item": "i3",
+      "time": 25,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0067"
+    },
+    {
+      "user": "u8",
+      "item": "i4",
+      "time": 26,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0068"
+    },
+    {
+      "user": "u8",
+      "item": "i5",
+      "time": 24,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0069"
+    },
+    {
+      "user": "u8",
+      "item": "i6",
+      "time": 25,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0070"
+    },
+    {
+      "user": "u8",
+      "item": "i7",
+      "time": 26,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0071"
+    },
+    {
+      "user": "u9",
+      "item": "i0",
+      "time": 27,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0072"
+    },
+    {
+      "user": "u9",
+      "item": "i1",
+      "time": 28,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0073"
+    },
+    {
+      "user": "u9",
+      "item": "i2",
+      "time": 29,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0074"
+    },
+    {
+      "user": "u9",
+      "item": "i3",
+      "time": 27,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0075"
+    },
+    {
+      "user": "u9",
+      "item": "i4",
+      "time": 28,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0076"
+    },
+    {
+      "user": "u9",
+      "item": "i5",
+      "time": 29,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0077"
+    },
+    {
+      "user": "u9",
+      "item": "i6",
+      "time": 27,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0078"
+    },
+    {
+      "user": "u9",
+      "item": "i7",
+      "time": 28,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0079"
+    },
+    {
+      "user": "u10",
+      "item": "i0",
+      "time": 32,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0080"
+    },
+    {
+      "user": "u10",
+      "item": "i1",
+      "time": 30,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0081"
+    },
+    {
+      "user": "u10",
+      "item": "i2",
+      "time": 31,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0082"
+    },
+    {
+      "user": "u10",
+      "item": "i3",
+      "time": 32,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0083"
+    },
+    {
+      "user": "u10",
+      "item": "i4",
+      "time": 30,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0084"
+    },
+    {
+      "user": "u10",
+      "item": "i5",
+      "time": 31,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0085"
+    },
+    {
+      "user": "u10",
+      "item": "i6",
+      "time": 32,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0086"
+    },
+    {
+      "user": "u10",
+      "item": "i7",
+      "time": 30,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0087"
+    },
+    {
+      "user": "u11",
+      "item": "i0",
+      "time": 34,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0088"
+    },
+    {
+      "user": "u11",
+      "item": "i1",
+      "time": 35,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0089"
+    },
+    {
+      "user": "u11",
+      "item": "i2",
+      "time": 33,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0090"
+    },
+    {
+      "user": "u11",
+      "item": "i3",
+      "time": 34,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0091"
+    },
+    {
+      "user": "u11",
+      "item": "i4",
+      "time": 35,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0092"
+    },
+    {
+      "user": "u11",
+      "item": "i5",
+      "time": 33,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0093"
+    },
+    {
+      "user": "u11",
+      "item": "i6",
+      "time": 34,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0094"
+    },
+    {
+      "user": "u11",
+      "item": "i7",
+      "time": 35,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0095"
+    }
+  ]
+}

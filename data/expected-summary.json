@@ -1,0 +1,17 @@
+[
+  {
+    "key": "click",
+    "count": 24,
+    "sum": 48
+  },
+  {
+    "key": "exposure",
+    "count": 48,
+    "sum": 48
+  },
+  {
+    "key": "purchase",
+    "count": 24,
+    "sum": 96
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "trainBefore": 30,
+  "validationBefore": 45,
+  "rank": 3,
+  "topK": 5,
+  "seed": 997
+}
