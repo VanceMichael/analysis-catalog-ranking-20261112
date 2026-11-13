@@ -864,6 +864,150 @@
       "strength": 4,
       "available": true,
       "id": "r0095"
+    },
+    {
+      "user": "u14",
+      "item": "i4",
+      "time": 20,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0096"
+    },
+    {
+      "user": "u14",
+      "item": "i5",
+      "time": 21,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0097"
+    },
+    {
+      "user": "u14",
+      "item": "i4",
+      "time": 22,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0098"
+    },
+    {
+      "user": "u13",
+      "item": "i0",
+      "time": 26,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0099"
+    },
+    {
+      "user": "u13",
+      "item": "i1",
+      "time": 27,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0100"
+    },
+    {
+      "user": "u13",
+      "item": "i0",
+      "time": 28,
+      "kind": "click",
+      "strength": 0,
+      "available": true,
+      "id": "r0101"
+    },
+    {
+      "user": "u12",
+      "item": "i0",
+      "time": 29,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0102"
+    },
+    {
+      "user": "u0",
+      "item": "i0",
+      "time": 30,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0103"
+    },
+    {
+      "user": "u0",
+      "item": "i0",
+      "time": 31,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0104"
+    },
+    {
+      "user": "u12",
+      "item": "i1",
+      "time": 31,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0105"
+    },
+    {
+      "user": "u13",
+      "item": "i2",
+      "time": 31,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0106"
+    },
+    {
+      "user": "u14",
+      "item": "i5",
+      "time": 31,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0107"
+    },
+    {
+      "user": "u10",
+      "item": "i8",
+      "time": 32,
+      "kind": "exposure",
+      "strength": 1,
+      "available": true,
+      "id": "r0108"
+    },
+    {
+      "user": "u13",
+      "item": "i2",
+      "time": 32,
+      "kind": "purchase",
+      "strength": 4,
+      "available": true,
+      "id": "r0109"
+    },
+    {
+      "user": "u14",
+      "item": "i7",
+      "time": 32,
+      "kind": "exposure",
+      "strength": 1,
+      "available": false,
+      "id": "r0110"
+    },
+    {
+      "user": "u10",
+      "item": "i8",
+      "time": 33,
+      "kind": "click",
+      "strength": 2,
+      "available": true,
+      "id": "r0111"
     }
   ]
 }

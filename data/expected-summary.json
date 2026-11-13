@@ -1,17 +1,17 @@
 [
   {
     "key": "click",
-    "count": 24,
-    "sum": 48
+    "count": 29,
+    "sum": 56
   },
   {
     "key": "exposure",
-    "count": 48,
-    "sum": 48
+    "count": 58,
+    "sum": 58
   },
   {
     "key": "purchase",
-    "count": 24,
-    "sum": 96
+    "count": 25,
+    "sum": 100
   }
 ]

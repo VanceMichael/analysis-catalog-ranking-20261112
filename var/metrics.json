@@ -1,0 +1,764 @@
+{
+  "definitions": {
+    "cohorts": "new=训练窗口无记录；singleExposure=训练窗口恰好一条曝光；zeroInteraction=有互动记录但强度全为 0",
+    "coverage": "被推荐过的商品数 / 被评估用户候选空间并集",
+    "itemSlices": "head=按训练期热度覆盖 longTailShare 的最小集合；longTail=其余训练期商品；new=训练后才上架",
+    "ndcgAtK": "二值相关的折损累计增益 / 理想增益，宏平均",
+    "noRelevantUsers": "验证窗口内无可核对相关商品的用户，不计入指标分母，逐人列出去向",
+    "popularityBias": "推荐商品的训练期热度均值（meanTrainPopularity）与头部商品占比（headShare）",
+    "recallAtK": "命中相关商品数 / 该用户相关商品数，含不可评分相关商品（记为未命中），宏平均",
+    "userSlices": "active=训练期互动强度>0；cold-start=其余（含全新、单次曝光、全零互动）",
+    "候选空间": "请求时刻可售（按该时刻之前最近的可售标记判定）且模型可评分的商品；逐用户记录在 users[].candidates",
+    "相关商品": "验证窗口内强度大于 0 的互动（点击/购买）商品；曝光不计入相关"
+  },
+  "delta": {
+    "coverage": 0.125,
+    "headShare": 0,
+    "ndcgAtK": 0.00876475016777023,
+    "recallAtK": 0
+  },
+  "inputFingerprint": "f4be0208163718be1cc8d1fff89cae197b111747dad27c1cf21fd380fd5cb2d3",
+  "k": 5,
+  "noRelevantUsers": [
+    {
+      "flags": [],
+      "reason": "验证窗口内只有曝光记录，无可核对的相关商品",
+      "slice": "active",
+      "user": "u14",
+      "validationRecords": 2
+    }
+  ],
+  "objective": "置信加权隐式 ALS：已曝光(用户,商品)对按互动强度加权回归；已曝光未互动对以 exposureConfidence/exposurePreference 软参与；未曝光对不当作负例，仅以 unobservedConfidence 均匀先验锚定（不随热度加权，可置 0）；无负采样",
+  "population": {
+    "evaluatedUsers": 5,
+    "noRelevantUsers": 1,
+    "validationUsers": 6
+  },
+  "systems": {
+    "baseline": {
+      "cohorts": {
+        "new": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.44647613924060525,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 0.55,
+          "users": 2
+        },
+        "singleExposure": {
+          "coverage": 0.625,
+          "ndcgAtK": 1,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 1,
+          "users": 1
+        },
+        "zeroInteraction": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.6309297535714575,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 1,
+          "users": 1
+        }
+      },
+      "itemSlices": {
+        "head": {
+          "hits": 8,
+          "recallAtK": 0.8,
+          "relevant": 10
+        },
+        "longTail": {
+          "hits": 0,
+          "recallAtK": 0,
+          "relevant": 1
+        },
+        "new": {
+          "hits": 0,
+          "recallAtK": 0,
+          "relevant": 1
+        }
+      },
+      "overall": {
+        "coverage": 0.625,
+        "ndcgAtK": 0.582146967857442,
+        "popularityBias": {
+          "headShare": 1,
+          "meanTrainPopularity": 28.4
+        },
+        "recallAtK": 0.82,
+        "users": 5
+      },
+      "userSlices": {
+        "active": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.38685280723454163,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 1,
+          "users": 1
+        },
+        "cold-start": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.630970508013167,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 0.775,
+          "users": 4
+        }
+      }
+    },
+    "model": {
+      "cohorts": {
+        "new": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.44647613924060525,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 0.55,
+          "users": 2
+        },
+        "singleExposure": {
+          "coverage": 0.625,
+          "ndcgAtK": 1,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 1,
+          "users": 1
+        },
+        "zeroInteraction": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.6309297535714575,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 1,
+          "users": 1
+        }
+      },
+      "itemSlices": {
+        "head": {
+          "hits": 8,
+          "recallAtK": 0.8,
+          "relevant": 10
+        },
+        "longTail": {
+          "hits": 0,
+          "recallAtK": 0,
+          "relevant": 1
+        },
+        "new": {
+          "hits": 0,
+          "recallAtK": 0,
+          "relevant": 1
+        }
+      },
+      "overall": {
+        "coverage": 0.75,
+        "ndcgAtK": 0.5909117180252123,
+        "popularityBias": {
+          "headShare": 1,
+          "meanTrainPopularity": 28
+        },
+        "recallAtK": 0.82,
+        "users": 5
+      },
+      "userSlices": {
+        "active": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.43067655807339306,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 26.4
+          },
+          "recallAtK": 1,
+          "users": 1
+        },
+        "cold-start": {
+          "coverage": 0.625,
+          "ndcgAtK": 0.630970508013167,
+          "popularityBias": {
+            "headShare": 1,
+            "meanTrainPopularity": 28.4
+          },
+          "recallAtK": 0.775,
+          "users": 4
+        }
+      }
+    }
+  },
+  "users": [
+    {
+      "baseline": {
+        "ndcg": 0.38685280723454163,
+        "recall": 1,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": true,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-baseline"
+          }
+        ]
+      },
+      "candidateCount": 8,
+      "candidates": [
+        "i0",
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7"
+      ],
+      "excluded": [],
+      "flags": [],
+      "model": {
+        "ndcg": 0.43067655807339306,
+        "recall": 1,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i2",
+            "rank": 1,
+            "score": 1.0193939280402162,
+            "source": "mf"
+          },
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 2,
+            "score": 1.0051049226710025,
+            "source": "mf"
+          },
+          {
+            "hit": false,
+            "item": "i3",
+            "rank": 3,
+            "score": 0.9945508783877413,
+            "source": "mf"
+          },
+          {
+            "hit": true,
+            "item": "i0",
+            "rank": 4,
+            "score": 0.9863025046336645,
+            "source": "mf"
+          },
+          {
+            "hit": false,
+            "item": "i5",
+            "rank": 5,
+            "score": 0.5665357910452068,
+            "source": "mf"
+          }
+        ],
+        "source": "mf"
+      },
+      "relevant": [
+        "i0"
+      ],
+      "requestTime": 30,
+      "slice": "active",
+      "unreachableRelevant": [],
+      "user": "u0"
+    },
+    {
+      "baseline": {
+        "ndcg": 0.5296347172140421,
+        "recall": 0.6,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": true,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": true,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": true,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-baseline"
+          }
+        ]
+      },
+      "candidateCount": 8,
+      "candidates": [
+        "i0",
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7"
+      ],
+      "excluded": [],
+      "flags": [
+        "new"
+      ],
+      "model": {
+        "ndcg": 0.5296347172140421,
+        "note": "用户不在训练映射中，使用训练期热门兜底",
+        "recall": 0.6,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": true,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": true,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": true,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-fallback"
+          }
+        ],
+        "source": "popularity-fallback"
+      },
+      "relevant": [
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i8"
+      ],
+      "requestTime": 30,
+      "slice": "cold-start",
+      "unreachableRelevant": [
+        {
+          "item": "i8",
+          "reason": "训练窗口内无记录，模型无因子（训练后上架）"
+        }
+      ],
+      "user": "u10"
+    },
+    {
+      "baseline": {
+        "ndcg": 0.36331756126716835,
+        "recall": 0.5,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": true,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": true,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-baseline"
+          }
+        ]
+      },
+      "candidateCount": 7,
+      "candidates": [
+        "i0",
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "excluded": [
+        {
+          "item": "i7",
+          "reason": "请求时刻 t=33 不可售"
+        }
+      ],
+      "flags": [
+        "new"
+      ],
+      "model": {
+        "ndcg": 0.36331756126716835,
+        "note": "用户不在训练映射中，使用训练期热门兜底",
+        "recall": 0.5,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": true,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": true,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-fallback"
+          }
+        ],
+        "source": "popularity-fallback"
+      },
+      "relevant": [
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "requestTime": 33,
+      "slice": "cold-start",
+      "unreachableRelevant": [],
+      "user": "u11"
+    },
+    {
+      "baseline": {
+        "ndcg": 1,
+        "recall": 1,
+        "recommendations": [
+          {
+            "hit": true,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-baseline"
+          }
+        ]
+      },
+      "candidateCount": 8,
+      "candidates": [
+        "i0",
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7"
+      ],
+      "excluded": [],
+      "flags": [
+        "singleExposure"
+      ],
+      "model": {
+        "ndcg": 1,
+        "note": "用户训练期无正向互动，使用训练期热门兜底",
+        "recall": 1,
+        "recommendations": [
+          {
+            "hit": true,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-fallback"
+          }
+        ],
+        "source": "popularity-fallback"
+      },
+      "relevant": [
+        "i1"
+      ],
+      "requestTime": 31,
+      "slice": "cold-start",
+      "unreachableRelevant": [],
+      "user": "u12"
+    },
+    {
+      "baseline": {
+        "ndcg": 0.6309297535714575,
+        "recall": 1,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": true,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-baseline"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-baseline"
+          }
+        ]
+      },
+      "candidateCount": 8,
+      "candidates": [
+        "i0",
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7"
+      ],
+      "excluded": [],
+      "flags": [
+        "zeroInteraction"
+      ],
+      "model": {
+        "ndcg": 0.6309297535714575,
+        "note": "用户训练期无正向互动，使用训练期热门兜底",
+        "recall": 1,
+        "recommendations": [
+          {
+            "hit": false,
+            "item": "i1",
+            "rank": 1,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": true,
+            "item": "i2",
+            "rank": 2,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i3",
+            "rank": 3,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i4",
+            "rank": 4,
+            "score": 30,
+            "source": "popularity-fallback"
+          },
+          {
+            "hit": false,
+            "item": "i0",
+            "rank": 5,
+            "score": 22,
+            "source": "popularity-fallback"
+          }
+        ],
+        "source": "popularity-fallback"
+      },
+      "relevant": [
+        "i2"
+      ],
+      "requestTime": 31,
+      "slice": "cold-start",
+      "unreachableRelevant": [],
+      "user": "u13"
+    }
+  ],
+  "window": {
+    "trainBefore": 30,
+    "validationBefore": 45
+  }
+}

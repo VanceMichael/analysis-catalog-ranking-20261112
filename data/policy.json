@@ -3,5 +3,13 @@
   "validationBefore": 45,
   "rank": 3,
   "topK": 5,
-  "seed": 997
+  "seed": 997,
+  "iterations": 12,
+  "regularization": 0.1,
+  "alpha": 1,
+  "kindWeights": { "exposure": 0, "click": 1, "purchase": 2 },
+  "exposureConfidence": 0.5,
+  "exposurePreference": 0,
+  "unobservedConfidence": 0.05,
+  "longTailShare": 0.8
 }

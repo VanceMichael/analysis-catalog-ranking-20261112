@@ -1,0 +1,26 @@
+{
+  "count": 112,
+  "groupBy": "kind",
+  "groups": [
+    {
+      "count": 29,
+      "items": 9,
+      "key": "click",
+      "sum": 56
+    },
+    {
+      "count": 58,
+      "items": 9,
+      "key": "exposure",
+      "sum": 58
+    },
+    {
+      "count": 25,
+      "items": 8,
+      "key": "purchase",
+      "sum": 100
+    }
+  ],
+  "inputFingerprint": "f4be0208163718be1cc8d1fff89cae197b111747dad27c1cf21fd380fd5cb2d3",
+  "valueField": "strength"
+}
